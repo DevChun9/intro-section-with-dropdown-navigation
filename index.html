@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.4/dist/flowbite.min.css" />
+  <script src="https://unpkg.com/flowbite@1.4.4/dist/flowbite.js"></script>
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="main">
+
+    <div class="nav flex justify-between md:px-20 md:my-10">
+      <div class="left flex">
+        <img class="mr-20 m-auto" src="images/logo.svg" alt="">
+        <!-- dropdown one -->
+        <div class="sus flex">
+          <div class="dropdown flex">
+            <div class="drop-btn flex">
+              <p>Feature</p>
+              <img class="h-2 m-auto" src="images/icon-arrow-down.svg" alt="">
+            </div>
+            <div class="drop-content shadow-xl">
+              <a class="flex" href=""><img class="h-full mr-5" src="images/icon-calendar.svg" alt=""> Calender</a>
+              <a class="flex" href=""><img class="h-full mr-5" src="images/icon-reminders.svg" alt=""> Reminders</a>
+              <a class="flex" href=""><img class="h-full mr-5" src="images/icon-todo.svg" alt=""> Todo list</a>
+              <a class="flex" href=""><img class="h-full mr-5" src="images/icon-planning.svg" alt=""> Planing</a>
+            </div>
+          </div>
+   
+          <div class="dropdown flex ml-20">
+            <div class="drop-btn flex">
+              <p>Company</p>
+              <img class="h-2 m-auto" src="images/icon-arrow-down.svg" alt="">
+            </div>
+            <div class="drop-content shadow-xl">
+              <a href="">History</a>
+              <a href="">Our Team</a>
+              <a href="">Blog</a>
+            </div>
+          </div>
+  
+          <div class="dropdown ml-10">
+            <p><a href="">Career</a></p>
+          </div>
+  
+          <div class="dropdown ml-10">
+            <p><a href="">About</a></p>
+          </div>
+  
+        </div>
+      </div>
+      <div class="right flex">
+        <p class=" text-slate-500 font-medium mr-5 m-auto hover:text-black"> <a href="">Login</a> </p>
+        <button class=" text-slate-500 font-medium px-6 py-2 rounded-xl border-2 hover:text-black hover:border-black duration-200">Register</button>
+      </div>
+    </div>
+
+    <div class="page flex md:p-20">
+      <div class="page__txt h-auto">
+        <h1 class="text-8xl font-bold mt-20">Make remote work</h1>
+        <p class="text-xl text-slate-500 mt-10">Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+        <button class="px-10 py-4 bg-black text-white font-medium rounded-xl mt-10 hover:bg-transparent hover:text-black hover:font-mediu hover:border-2  hover:border-black duration-200">Learn more</button>
+        <div class="page__txt__partner flex h-8 mt-20">
+          <img src="images/client-databiz.svg" alt="">
+          <img class="ml-5" src="images/client-audiophile.svg" alt="">
+          <img class="ml-5" src="images/client-maker.svg" alt="">
+          <img class="ml-5" src="images/client-meet.svg" alt="">
+        </div>
+      </div>
+      <div class="page__img">
+        <img class="h-2/3 m-auto img__pc" src="images/image-hero-desktop.png" alt="">
+        <img class="img__mobile" src="images/image-hero-mobile.png" alt="">
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+<script src="app.js"></script>
+</html>
